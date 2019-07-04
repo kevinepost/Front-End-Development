@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms & Input</title>
+  </head>
+  <body>
+    <!-- Forms & Input -->
+    <!-- This section is the back end action taken when submitting a form -->
+    <form action="process.php">
+      <!-- Text -->
+      <div>
+      <!-- If you give the id the same name as the for attribute if you click on the label it will highlight the form -->
+        <label for="name">Name: </label>
+        <!-- This loads the input field y default with the value of John Doe. -->
+        <input type="text" id="name" name="name" value="John Doe">
+      </div><br>
+      <!-- Email -->
+      <div>
+        <label for="email">Email: </label>
+      <!-- By adding email to the type you are actually adding email validation.  Also the placeholder populates the email field with a hint of whats to go in the field. -->
+        <input type="email" name="email" id="email" placeholder="Enter an email">
+      </div>
+      <!-- Textarea -->
+      <div>
+        <label for="message">Message:</label><br>
+        <!-- The cols and rows define the width and height of your textarea -->
+        <textarea name="message" id="message" cols="50" rows="5"></textarea>
+      </div>
+      <!-- Select -->
+      <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <!-- The selected means that it will be selected by default. -->
+          <option value="female" selected>Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <!-- Number -->
+      <div>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age">
+      </div>
+      <!-- Date -->
+      <div>
+        <label for="birthdate">Birthdate: </label> 
+        <input type="date" name="birthdate" id="birthdate">
+      </div>
+      <!-- Radio -->
+      <div>
+        <label for="membership">Membership</label>
+        <input type="radio" name="membership" value="simple" id="membership"> Simple
+        <!-- The checked means that it will be selected by default. -->
+        <input type="radio" name="membership" value="standard" id="membership" checked> Standard
+        <input type="radio" name="membership" value="super" id="membership"> Super
+      </div>
+      <!-- Checkbox -->
+      <div>
+        <label for="membership">I Like..</label>
+        <input type="checkbox" name="likes" value="bike" id="likes"> Bike
+        <input type="checkbox" name="likes" value="car" id="likes"> Car
+        <input type="checkbox" name="likes" value="boat" id="likes"> Boat
+      </div>
+      <!-- Input submit -->
+      <input type="submit" value="Submit">
+      <!-- Button submit -->
+      <!-- <button type="submit">Submit</button> -->
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
