@@ -1,0 +1,27 @@
+/* Star */
+* {
+  border: 1px solid lightblue;
+}
+
+/* Descendant Selectors */
+li a {
+  color: red;
+}
+
+/* Adjacent Selectors = This will only be applied to the ul after the h3 on the same level.  Not all ul */
+h3 + ul {
+  border: 4px solid black;
+}
+
+/* Attribute Selectors = No Spaces after the a */
+a[href="https://www.2ndswing.com"] {
+  background: rgb(147, 238, 144);
+
+/* input[type="checkbox"],
+input[type="text"] */
+}
+
+/* nth of type */
+ul:nth-of-type(3) {
+  background: yellow;
+}
